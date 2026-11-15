@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Лунные равнины — VRM Edition</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{
+"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+"three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+"three/examples/jsm/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+"@pixiv/three-vrm":"https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@2.1.2/lib/three-vrm.module.min.js"}}</script>
+</head><body>
+<div id="hud">
+ <div class="panel stats">💎 <b id="gems">0</b>/10 &nbsp; 👾 <b id="kills">0</b><div style="opacity:.8;margin-top:8px">Здоровье</div><div class="meter"><i id="hp"></i></div><div style="opacity:.8">Выносливость</div><div class="meter" id="stam"><i id="st"></i></div><div id="near"></div></div>
+ <button class="panel" id="pause">Ⅱ</button>
+</div>
+<div id="toast"></div>
+<div id="controls"><div id="stick"><div id="nub"></div></div><div class="actions"><button class="act" id="jump"><span>⤒</span>Прыжок</button><button class="act" id="skill"><span>✦</span>Навык</button><button class="act big" id="attack"><span>⚔</span>Удар</button></div></div>
+<div id="help">WASD — движение · Shift — бег · Пробел — прыжок · J / F — удар · E — лунная волна · мышь (зажать) — камера · колесо — zoom</div>
+<div id="menu"><div class="box"><h1>Лунные равнины</h1><p>VRM Edition · три героини · кристаллы · магия · ночной лес</p><p>Собери 10 лунных кристаллов, победи стражей и исследуй долину.</p><button class="primary" id="start">Начать игру</button><p style="font-size:12px;opacity:.65">При первом запуске загружаются 3D-модели (~70 МБ), дальше они берутся из кэша.</p></div></div>
+<div id="load"><div class="inner"><h2>Подготавливаем лунный мир…</h2><p id="loadtxt">Загрузка персонажей</p><div id="progress"><i id="prog"></i></div><p id="loadpct">0%</p></div></div>
+<script type="module" src="main.js"></script>
+</body></html>
